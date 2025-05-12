@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mrudula | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/MG.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/MG.png">
+
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="./video/background.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Navigation -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="./images/logo.png" alt="Mrudula's Logo" />
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="./resume/Mrudula_Resume.pdf" target="_blank" download>Resume</a></li>
+  </ul>
+</nav>
+
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section" data-aos="zoom-in">
+    <h1>Hi, I'm Mrudula</h1>
+    <p>B.Tech CSE (AI & ML) | Aspiring AI/ML Specialist | Innovating with Data & Code</p>
+    <a href="#contact" class="btn">Let’s Connect</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m Mrudula, Fueled by a deep passion for the transformative power of Artificial Intelligence and Machine Learning, I strive to merge innovation with practical problem-solving to make a meaningful mark in the tech world.
+     Driven by curiosity and a commitment to continuous growth, I actively explore emerging technologies and take on impactful projects. My mission is to turn bold, visionary ideas into real-world AI/ML solutions that inspire change and drive progress.</p>
+  </section>
+
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill" data-skill="HTML"><i class="fab fa-html5"></i> HTML</div>
+    <div class="skill" data-skill="CSS"><i class="fab fa-css3-alt"></i> CSS</div>
+    <div class="skill" data-skill="JavaScript"><i class="fab fa-js"></i> JavaScript</div>
+    <div class="skill" data-skill="Python"><i class="fab fa-python"></i> Python</div>
+    <div class="skill" data-skill="DBMS"><i class="fas fa-database"></i> DBMS</div>
+    <div class="skill" data-skill="AI & ML"><i class="fas fa-robot"></i> AI & ML</div>
+    <div class="skill" data-skill="Git & GitHub"><i class="fas fa-git"></i> Git & GitHub</div>
+  </div>
+</section>
+
+<!-- Popup Box -->
+<div id="skill-popup" class="skill-popup">
+  <span class="close-popup">&times;</span>
+  <h3 id="popup-title"></h3>
+  <p id="popup-description"></p>
+</div>
+
+
+
+
+
+
+<section id="projects" data-aos="fade-right">
+  <h2>Projects</h2>
+  <div class="project-grid">
+
+    <a href="https://github.com/Mrudula211/quiz-app" target="_blank" class="project-link-wrapper">
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Interactive Quiz Application</h3>
+        <p>A JavaScript-based quiz app with instant feedback, live scoring, and dynamic questions.</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/Mrudula211/chat-app" target="_blank" class="project-link-wrapper">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+        <h3>Real-time Chat Application</h3>
+        <p>Built using WebSockets and React.js, with live messaging and history support.</p>
+      </div>
+    </a>
+
+    <a href="https://mrudula-portfolio.vercel.app/" target="_blank" class="project-link-wrapper">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive single-page portfolio with project showcases and smooth navigation.</p>
+      </div>
+    </a>
+
+    <a href="https://github.com/Mrudula211/e-learning-ui" target="_blank" class="project-link-wrapper">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>E-Learning Platform UI</h3>
+        <p>Multi-page front-end interface with courses, progress tracking, and videos.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  <!-- Experience Section -->
+  <section id="experience" data-aos="fade-up">
+  <h2>Experience</h2>
+  <div class="experience-grid">
+    <div class="experience-card" data-aos="zoom-in">
+      <h3>Frontend Development Intern</h3>
+      <p>CODTECH IT SOLUTIONS</p>
+      <p>Duration: 8 weeks</p>
+      <p>Worked on responsive UI design, bug fixing, and component development using HTML, CSS, and JavaScript.</p>
+    </div>
+    <!-- Add more cards here if needed -->
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+
+  <div class="contact-info">
+    <h3>Contact Information</h3>
+    <p>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:mrudulagharat0211@gmail.com">mrudulagharat0211@gmail.com</a>
+    </p>
+    <p>
+      <i class="fas fa-phone"></i>
+      <a href="tel:+919552022714">+91 9552022714</a> <!-- Replace with your actual number -->
+    </p>
+  </div>
+  <br>
+
+  <div class="social-links">
+    <h3>Let’s connect and create something meaningful together</h3>
+    <p>
+      <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/mrudula-g-92a394267/" target="_blank">Linkedin</a>
+    </p>
+    <p>
+      <i class="fab fa-github"></i>
+      <a href="https://github.com/Mrudula211" target="_blank">Github</a>
+    </p>
+    <p>
+  <i class="fas fa-terminal"></i>
+  <a href="https://leetcode.com/u/mrudula0211/" target="_blank">Leetcode</a>
+</p>
+
+    <!-- Optional additional social links -->
+    <p>
+      <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com/mrudula5766/" target="_blank">Instagram</a>
+    </p>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Mrudula Gharat. All Rights Reserved.</p>
+
+</footer>
+
+
+
+
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+  const skillDescriptions = {
+    "HTML": "HTML structures content for the web. It's the foundation of all websites.",
+    "CSS": "CSS styles your HTML — think colors, fonts, and layout.",
+    "JavaScript": "JavaScript makes websites interactive — like animations, buttons, and apps.",
+    "Python": "A versatile language used in web, data science, AI, and more.",
+    "DBMS": "DBMS handles data storage and management — like MySQL or MongoDB.",
+    "AI & ML": "AI and ML let systems learn and make decisions, powering smart technology.",
+    "Git & GitHub": "Git and GitHub help manage code versions and enable seamless collaboration in development projects."
+  };
+
+  const skills = document.querySelectorAll(".skill");
+  const popup = document.getElementById("skill-popup");
+  const popupTitle = document.getElementById("popup-title");
+  const popupDesc = document.getElementById("popup-description");
+  const closeBtn = document.querySelector(".close-popup");
+
+  skills.forEach(skill => {
+    skill.addEventListener("mouseenter", () => {
+      const skillName = skill.getAttribute("data-skill");
+      popupTitle.textContent = skillName;
+      popupDesc.textContent = skillDescriptions[skillName];
+      popup.style.display = "block";
+    });
+
+    skill.addEventListener("mouseleave", () => {
+      setTimeout(() => {
+        if (!popup.matches(":hover")) {
+          popup.style.display = "none";
+        }
+      }, 200);
+    });
+  });
+
+  popup.addEventListener("mouseleave", () => {
+    popup.style.display = "none";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+</script>
+
+</body>
+</html>
